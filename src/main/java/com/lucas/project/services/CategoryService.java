@@ -29,12 +29,17 @@ public class CategoryService {
 		return obj.get();
 	}
 
-	public Category insert(CategoryDto categoryDto){
-		Category category = new Category();
-		category.setName(categoryDto.getName());
-		repository.save(category);
+	public Category insert(CategoryDto categoryDto)  {
+		try {
+			Category category = new Category();
+			category.setName(categoryDto.getName());
+			repository.save(category);
 
-		return category;
+			return category;
+		}
+		catch(DataIntegrityViolationException e){
+			throw new DataIntegrityViolationException("Category has already been created.");
+		}
 	}
 
 	public void delete(Long id){

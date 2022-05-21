@@ -29,12 +29,14 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 - [H2 Database](https://mvnrepository.com/artifact/com.h2database/h2)
 - [Swagger](https://mvnrepository.com/artifact/io.springfox/springfox-swagger2)
 - [PostgreSQL](https://www.postgresql.org/)
+- [Junit5](https://junit.org/junit5/)
 <br>
 
 ## 🔖 Sobre
 -  CRUD de usuarios, produtos, categorias e ordens
 -  Integração total com o Spring Framework mais recente: inversão de controle, injeção de dependência, etc.
 -  Mapeamento exceções para a resposta HTTP correta com detalhes de exceção no corpo.
--  um banco de dados na memória (H2) para armazenar os dados para fins de testes.
+-  Um banco de dados na memória (H2) para armazenar os dados para fins de testes.
+-  Testes automatizados com Junit/Mockito
 -  Toda a API é "autodocumentada" pelo Swagger2.
 
