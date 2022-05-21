@@ -3,7 +3,7 @@
     <a href=>Workshop APIRest</a>
 </h1>
 
-  <h3 align="center">APIRest para ecommerce desenvolvida utilizando Java e Springboot</h3>
+<h3 align="center">APIRest para ecommerce desenvolvida utilizando Java e Springboot</h3>
 
 <h1 align="center">
     <img align="center" width=600 src="https://i.imgur.com/IsRrTzg.png">
@@ -30,7 +30,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 - [Swagger](https://mvnrepository.com/artifact/io.springfox/springfox-swagger2)
 - [PostgreSQL](https://www.postgresql.org/)
 - [Junit5](https://junit.org/junit5/)
-<br>
+  <br>
 
 ## 🔖 Sobre
 -  CRUD de usuarios, produtos, categorias e ordens
@@ -39,4 +39,3 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 -  Um banco de dados na memória (H2) para armazenar os dados para fins de testes.
 -  Testes automatizados com Junit/Mockito
 -  Toda a API é "autodocumentada" pelo Swagger2.
-

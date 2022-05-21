@@ -92,7 +92,7 @@ public class UserServiceTest {
 	@Test
 	public void whenDeleteShouldDeleteUser() {
 		service.delete(id);
-		verify(repository).deleteById(id);
+		verify(repository, times(1)).deleteById(anyLong());
 	}
 
 	@Test
