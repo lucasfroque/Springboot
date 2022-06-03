@@ -1,21 +1,12 @@
 package com.lucas.project.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name = "tb_product")
@@ -91,6 +82,9 @@ public class Product implements Serializable {
 		this.imgUrl = imgUrl;
 	}
 
+	public void setCategories(Set<Category> categories) {
+		this.categories = categories;
+	}
 	public Set<Category> getCategories() {
 		return categories;
 	}
